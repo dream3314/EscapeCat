@@ -22,7 +22,7 @@ public class CatController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && this.rbody.velocity.y ==0)
         {
             //this.rbody.AddForce(this.transform.up * this.force);
             this.rbody.AddForce(Vector3.up * this.jumpForce); //월드상의 그린 엑시스(Y축)을 따라간다
