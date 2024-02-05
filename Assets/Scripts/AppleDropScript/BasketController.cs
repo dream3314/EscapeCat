@@ -9,9 +9,11 @@ public class BasketController : MonoBehaviour
     [SerializeField] private AudioClip bombSfx;
 
     private AudioSource audioSource;
+    private GameObject director;
 
     private void Start()
     {
+        this.director = GameObject.Find("AppleDirector");
         this.audioSource = this.GetComponent<AudioSource>();
     }
 
@@ -39,8 +41,10 @@ public class BasketController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        this.director.GetComponent<AppleDirector>().GetApple();
+        this.director.GetComponent<AppleDirector>().GetBomb();
         Debug.LogFormat("Catch! = > {0}", other.gameObject.tag);
-
+        
         
         if (other.CompareTag("Apple"))
         {
