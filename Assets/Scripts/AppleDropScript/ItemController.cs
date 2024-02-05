@@ -16,10 +16,4 @@ public class ItemController : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("Catch!");
-        Destroy(other.gameObject);
-    }
 }
