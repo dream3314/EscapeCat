@@ -8,6 +8,7 @@ public class ItemGenerator : MonoBehaviour
     public GameObject bomb;
     float span = 1.0f;
     float delta = 0;
+    int ratio = 2;
 
     void Update()
     {
