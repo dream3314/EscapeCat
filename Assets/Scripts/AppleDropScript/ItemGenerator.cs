@@ -16,6 +16,7 @@ public class ItemGenerator : MonoBehaviour
         if(this.delta > this.span )
         {
             this.delta = 0;
+
             GameObject item = Instantiate(apple);
             float x = Random.Range(-1, 2);
             float z = Random.Range(-1, 2);

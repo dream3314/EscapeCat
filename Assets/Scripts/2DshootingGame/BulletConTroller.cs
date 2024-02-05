@@ -8,7 +8,6 @@ public class BulletConTroller : MonoBehaviour
 
     void Start()
     {
-        
     }
 
 

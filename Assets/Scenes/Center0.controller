@@ -9,6 +9,7 @@ AnimatorController:
   m_Name: Center0
   serializedVersion: 5
   m_AnimatorParameters: []
+<<<<<<< HEAD
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -70,3 +71,6 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 5502288473614962125}
+=======
+  m_AnimatorLayers: []
+>>>>>>> 2d4ad549d57dbec45a44b5d69a62c6a4d668eaa8
